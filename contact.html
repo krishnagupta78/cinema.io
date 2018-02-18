@@ -84,28 +84,37 @@
 					
 				</div>
 				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                    <form class="contact-form" action="mail.php" method="post">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" placeholder="Name" type="text">
+								<input name="name" class="form-control" placeholder="Name" type="text" required>
+							</div>
+						</div>
+                       
+						<div class="col-md-6">
+							<div class="form-group">
+								<input name="mail"  class="form-control" placeholder="Email" type="text" required>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" placeholder="Email" type="text">
+								<input name="Subject"  class="form-control" placeholder="subject" type="text" required>
+							</div>
+						</div>
+                        
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input value="Send Message" class="btn btn-primary" type="submit">
+								<input value="Send Message" class="btn name="submit" btn-primary" type="submit">
 							</div>
 						</div>
 					</div>
+                    </form>
 				</div>
 			</div>
 		</div>
